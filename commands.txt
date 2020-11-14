@@ -1,5 +1,5 @@
 docker run -d --rm --hostname my-rabbit --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
-docker build -t python-server .
+docker build -t python-rabbit .
 docker run -it --rm --add-host rabbit:172.17.0.2 --name python-rabbit python-rabbit
-docker build -t golang-server .
-docker run -it --rm -p 3000:3000 --add-host rabbit:172.17.0.2 --name golang-rabbit golang-rabbit
+docker build -t golang-rabbit .
+docker run -it --rm -p 3001:3001 --add-host rabbit:172.17.0.2 --name golang-rabbit golang-rabbit

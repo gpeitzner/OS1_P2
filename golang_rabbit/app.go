@@ -71,5 +71,5 @@ func createCase(w http.ResponseWriter, r *http.Request) {
 func main() {
 	r := mux.NewRouter()
 	r.HandleFunc("/", createCase).Methods("POST")
-	log.Fatal(http.ListenAndServe(":3001", r))
+	log.Fatal(http.ListenAndServe(":3000", r))
 }

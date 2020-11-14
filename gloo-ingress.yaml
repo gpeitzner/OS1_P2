@@ -10,4 +10,4 @@ spec:
         paths:
           - backend:
               serviceName: project-gloo-service
-              servicePort: 3001
+              servicePort: 3000
