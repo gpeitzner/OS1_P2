@@ -37,7 +37,7 @@ func sendInfection(infection Infection) {
 	body := "{\"name\":\"" + infection.Name +
 		"\", \"location\":\"" + infection.Location +
 		"\", \"age\":\"" + infection.Age +
-		"\", \"infectedtype:\"" + infection.InfectedType +
+		"\", \"infectedtype\":\"" + infection.InfectedType +
 		"\", \"state\":\"" + infection.State + "\"}"
 	err = ch.Publish(
 		"",     // exchange
