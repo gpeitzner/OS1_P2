@@ -19,8 +19,8 @@ spec:
             - containerPort: 5672
             - containerPort: 15672
         - name: python-server
-          image: python-server
+          image: gcr.io/peppy-aileron-292121/python-server:1.0
         - name: goolang-server
-          image: goolang-server
+          image: gcr.io/peppy-aileron-292121/golang-server:1.0
           ports:
             - containerPort: 3000
