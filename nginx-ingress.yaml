@@ -8,8 +8,8 @@ spec:
   rules:
     - http:
       paths:
-        - path: /nginx
-          pathType: Prefix
-          backend:
+        - backend:
             serviceName: project-nginx-service
             servicePort: 3000
+          path: /nginx
+          pathType: Prefix
