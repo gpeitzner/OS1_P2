@@ -23,4 +23,4 @@ spec:
         - name: goolang-server
           image: gcr.io/peppy-aileron-292121/golang-server:1.0
           ports:
-            - containerPort: 3000
+            - containerPort: 3001

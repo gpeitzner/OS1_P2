@@ -1,11 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: project-service
+  name: project-gloo-service
 spec:
   selector:
     app: project
   ports:
-    - port: 3000
-      targetPort: 3000
+    - port: 3001
+      targetPort: 3001
   type: ClusterIP
