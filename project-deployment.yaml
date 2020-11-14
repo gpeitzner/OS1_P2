@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project-deployment
+spec:
+  selector:
+    matchLabels:
+      app: project
+      namespace: project
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: project
+    spec:
+      containers:
+        - name: python-grpc
+          image: gcr.io/peppy-aileron-292121/python-grpc:1.0
+          ports:
+            - containerPort: 50051
+        - name: golang-grpc
+          image: gcr.io/peppy-aileron-292121/golang-grpc:1.0
+          ports:
+            - containerPort: 3000
+        - name: rabbitmq
+          image: rabbitmq:3-management
+          ports:
+            - containerPort: 5672
+            - containerPort: 15672
+        - name: python-rabbit
+          image: gcr.io/peppy-aileron-292121/python-rabbit:1.0
+        - name: goolang-rabbit
+          image: gcr.io/peppy-aileron-292121/golang-rabbit:1.0
+          ports:
+            - containerPort: 3001
