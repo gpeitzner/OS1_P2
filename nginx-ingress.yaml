@@ -9,6 +9,8 @@ spec:
     - host: nginx.gloo.com
       http:
         paths:
-          - backend:
+          - path: /nginx
+            pathType: Prefix
+            backend:
               serviceName: project-nginx-service
               servicePort: 3000
