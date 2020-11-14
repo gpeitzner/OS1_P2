@@ -10,6 +10,6 @@ spec:
         paths:
           - pathType: Prefix
             path: "/nginx"
-          - backend:
+            backend:
               serviceName: project-nginx-service
               servicePort: 3000

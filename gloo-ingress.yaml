@@ -10,6 +10,6 @@ spec:
         paths:
           - pathType: Prefix
             path: "/gloo"
-          - backend:
+            backend:
               serviceName: project-gloo-service
               servicePort: 3001
