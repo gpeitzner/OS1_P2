@@ -7,9 +7,9 @@ metadata:
 spec:
   rules:
     - http:
-        paths:
-          - pathType: Prefix
-            path: "/gloo"
-            backend:
-              serviceName: project-gloo-service
-              servicePort: 3001
+      paths:
+        - path: /gloo
+          pathType: Prefix
+          backend:
+            serviceName: project-gloo-service
+            servicePort: 3000
