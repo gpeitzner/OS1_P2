@@ -1,14 +1,13 @@
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: project-ingress
   annotations:
-    kubernetes.io/ingress.class: gloo
+    kubernetes.io/ingress.class: "gloo"
 spec:
   rules:
-    http:
-      paths:
-        - path: /.*
-          backend:
-            serviceName: project-service
-            servicePort: 3000
+    - http:
+        paths:
+          - backend:
+              serviceName: project-service
+              servicePort: 3000
