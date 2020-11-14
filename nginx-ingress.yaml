@@ -6,7 +6,8 @@ metadata:
     kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
-    - http:
+    - host: nginx.gloo.com
+      http:
       paths:
         - backend:
             serviceName: project-nginx-service
