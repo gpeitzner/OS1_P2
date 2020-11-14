@@ -13,7 +13,7 @@ r = redis.Redis(host='18.222.232.8', port=6379, db=0)
 
 def main():
     connection = pika.BlockingConnection(
-        pika.ConnectionParameters(host='rabbit'))
+        pika.ConnectionParameters(host='localhost'))
     channel = connection.channel()
 
     channel.queue_declare(queue='hello')

@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: project-deployment
+spec:
+  selector:
+    matchLabels:
+      app: project
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: project
+    spec:
+      containers:
+        - name: rabbitmq
+          image: rabbitmq:3-management
+          ports:
+            - containerPort: 5672
+            - containerPort: 15672
+        - name: python-server
+          image: python-server
+        - name: goolang-server
+          image: goolang-server
+          ports:
+            - containerPort: 3000
