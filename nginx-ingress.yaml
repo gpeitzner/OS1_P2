@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1beta1
 kind: Ingress
 metadata:
   name: project-nginx-ingress
+  namespace: project
   annotations:
     kubernetes.io/ingress.class: "nginx"
 spec:
@@ -9,5 +10,5 @@ spec:
   - http:
       paths:
       - backend:
-          serviceName: project-service
+          serviceName: project-nginx-service
           servicePort: 3000
