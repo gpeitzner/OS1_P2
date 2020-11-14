@@ -31,4 +31,4 @@ spec:
         - name: goolang-rabbit
           image: gcr.io/peppy-aileron-292121/golang-rabbit:1.0
           ports:
-            - containerPort: 3001
+            - containerPort: 3000
