@@ -6,8 +6,10 @@ metadata:
     kubernetes.io/ingress.class: "nginx"
 spec:
   rules:
-  - http:
-      paths:
-      - backend:
-          serviceName: project-nginx-service
-          servicePort: 3000
+    - http:
+        paths:
+          - pathType: Prefix
+            path: "/nginx"
+          - backend:
+              serviceName: project-nginx-service
+              servicePort: 3000

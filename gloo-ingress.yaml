@@ -8,6 +8,8 @@ spec:
   rules:
     - http:
         paths:
+          - pathType: Prefix
+            path: "/gloo"
           - backend:
               serviceName: project-gloo-service
               servicePort: 3001
