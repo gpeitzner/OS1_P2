@@ -2,11 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: project-deployment
+  namespace: project
 spec:
   selector:
     matchLabels:
       app: project
-      namespace: project
   replicas: 1
   template:
     metadata:
