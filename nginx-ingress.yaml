@@ -8,9 +8,9 @@ spec:
   rules:
     - host: nginx.gloo.com
       http:
-      paths:
-        - backend:
-            serviceName: project-nginx-service
-            servicePort: 3000
-          path: /nginx
-          pathType: Prefix
+        paths:
+          - path: /nginx
+            pathType: Prefix
+            backend:
+              serviceName: project-nginx-service
+              servicePort: 3000
