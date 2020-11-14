@@ -13,14 +13,14 @@ spec:
         app: project
     spec:
       containers:
-        # - name: python-grpc
-        #   image: gcr.io/peppy-aileron-292121/python-grpc:1.0
-        #   ports:
-        #     - containerPort: 50051
-        # - name: golang-grpc
-        #   image: gcr.io/peppy-aileron-292121/golang-grpc:1.0
-        #   ports:
-        #     - containerPort: 3000
+        - name: python-grpc
+          image: gcr.io/peppy-aileron-292121/python-grpc:1.0
+          ports:
+            - containerPort: 50051
+        - name: golang-grpc
+          image: gcr.io/peppy-aileron-292121/golang-grpc:1.0
+          ports:
+            - containerPort: 3000
         - name: rabbitmq
           image: rabbitmq:3-management
           ports:
@@ -31,4 +31,4 @@ spec:
         - name: goolang-rabbit
           image: gcr.io/peppy-aileron-292121/golang-rabbit:1.0
           ports:
-            - containerPort: 3000
+            - containerPort: 3001
