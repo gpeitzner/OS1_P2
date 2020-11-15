@@ -3,7 +3,6 @@ import './App.css';
 import React, { Component } from 'react'
 import PrimerReporte from './graficas/PrimerReporte.js'
 import HorizontalBarExample from "./graficas/CuartoReporte.js";
-import { HorizontalBar } from 'react-chartjs-2';
 import axios from 'axios';
 
 export default class App extends Component {
@@ -20,13 +19,13 @@ export default class App extends Component {
   }
 
   async getDataAxios(){
-      const response = await axios.get("http://34.69.4.1:8081/");
+      const response = await axios.get("http://35.222.216.62:8081/");
       this.setState({last_item:response.data});
       console.log(response.data);
   }
 
   async getPrimerReporte(){
-    let response = await axios.get("http://34.69.4.1:8081/primero");
+    let response = await axios.get("http://35.222.216.62:8081/primero");
     
     
     let info = response.data.map(resitem=>{
@@ -45,7 +44,7 @@ export default class App extends Component {
   }
 
   async getSegundoReporte(){
-    let response = await axios.get("http://34.69.4.1:8081/segundo");
+    let response = await axios.get("http://35.222.216.62:8081/segundo");
     let info = response.data.map(resitem=>{
       let randomColor = Math.floor(Math.random()*16777215).toString(16);
       let item = {}
@@ -58,7 +57,7 @@ export default class App extends Component {
   }
 
   async getCuartoReporte(){
-    let response = await axios.get("http://34.69.4.1:8081/cuarto");
+    let response = await axios.get("http://35.222.216.62:8081/cuarto");
     let labels = response.data.map(resitem=>{
       return resitem._id;
     });
@@ -151,8 +150,8 @@ export default class App extends Component {
         </div>
         <div className="footer">
           <small>Brandon Chitay - 201503385</small>
-          <small>Pablo Osuna </small>
-          <small>Guillermo</small>
+          <small>Pablo Osuna - 201503911</small>
+          <small>Guillermo - 201504468</small>
         </div>
       </React.Fragment>
     )
