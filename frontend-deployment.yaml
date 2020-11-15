@@ -7,18 +7,18 @@ spec:
   selector:
     matchLabels:
       app: frontend
-    replicas: 3
-    template:
-      metadata:
-        labels:
-          app: frontend
-      spec:
-        containers:
-          - name: reactjs-server
-            image: gcr.io/peppy-aileron-292121/reactjs-server:1.0
-            ports:
-              - containerPort: 3002
-          - name: nodejs-server
-            image: gcr.io/peppy-aileron-292121/nodejs-server:1.0
-            ports:
-              - containerPort: 8081
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+        - name: reactjs-server
+          image: gcr.io/peppy-aileron-292121/reactjs-server:1.0
+          ports:
+            - containerPort: 3002
+        - name: nodejs-server
+          image: gcr.io/peppy-aileron-292121/nodejs-server:1.0
+          ports:
+            - containerPort: 8081
