@@ -20,13 +20,13 @@ export default class App extends Component {
   }
 
   async getDataAxios(){
-      const response = await axios.get("http://localhost:8081/");
+      const response = await axios.get("http://34.69.4.1:8081/");
       this.setState({last_item:response.data});
       console.log(response.data);
   }
 
   async getPrimerReporte(){
-    let response = await axios.get("http://localhost:8081/primero");
+    let response = await axios.get("http://34.69.4.1:8081/primero");
     
     
     let info = response.data.map(resitem=>{
@@ -45,7 +45,7 @@ export default class App extends Component {
   }
 
   async getSegundoReporte(){
-    let response = await axios.get("http://localhost:8081/segundo");
+    let response = await axios.get("http://34.69.4.1:8081/segundo");
     let info = response.data.map(resitem=>{
       let randomColor = Math.floor(Math.random()*16777215).toString(16);
       let item = {}
@@ -58,7 +58,7 @@ export default class App extends Component {
   }
 
   async getCuartoReporte(){
-    let response = await axios.get("http://localhost:8081/cuarto");
+    let response = await axios.get("http://34.69.4.1:8081/cuarto");
     let labels = response.data.map(resitem=>{
       return resitem._id;
     });
