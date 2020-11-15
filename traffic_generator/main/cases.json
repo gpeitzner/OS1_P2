@@ -1,0 +1,150 @@
+[  
+  {
+    "name": "PRUEBA APP CON GLOO",
+    "location": "Guate",
+    "age": "92",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+
+  {
+    "name": "Geoffrey Hayne",
+    "location": "Peten",
+    "age": "92",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Marlyn Jakubowicz",
+    "location": "Guatemala",
+    "age": "13",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Rochester Novic",
+    "location": "Guatemala",
+    "age": "77",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Heall Deeble",
+    "location": "Solola",
+    "age": "64",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Joby Golding",
+    "location": "Jalapa",
+    "age": "81",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Alleyn Wardingley",
+    "location": "Chimaltenango",
+    "age": "89",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Herschel Grigoletti",
+    "location": "Izabal",
+    "age": "52",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Noble Dawby",
+    "location": "Guatemala",
+    "age": "100",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Finn Camblin",
+    "location": "Guatemala",
+    "age": "82",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Lindsay Keys",
+    "location": "Jalapa",
+    "age": "69",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Donny Woof",
+    "location": "Guastatoya",
+    "age": "30",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Kelsi O'Currane",
+    "location": "Zacapa",
+    "age": "6",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Melody Mathes",
+    "location": "Zacapa",
+    "age": "21",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Ursula Schooley",
+    "location": "Chiquimula",
+    "age": "87",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Raye Yurukhin",
+    "location": "Escuintla",
+    "age": "76",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Chariot Pascho",
+    "location": "Escuintla",
+    "age": "100",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Moll Rubberts",
+    "location": "Escuintla",
+    "age": "5",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Valencia Gelderd",
+    "location": "Escuintla",
+    "age": "70",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Morgen Sheering",
+    "location": "Escuintla",
+    "age": "64",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  },
+  {
+    "name": "Clayson McIndrew",
+    "location": "Jutiapa",
+    "age": "36",
+    "infectedtype": "communitary",
+    "state": "symptomatic"
+  }
+]
