@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: content-box;
+
+}
+
+h1{
+  font-family: 'Handlee', cursive;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFE01B;
+  color: #241C15;
+}
+
+.options{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  background-color: white;
+  padding: 1rem;
+  border: none;
+  color: #241C15;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+button:hover{
+  border-bottom: 5px solid #FFE01B;
+}
+
+button:active{
+  background-color: #FFE01B;
+  color: #241C15;
+}
+
+.footer{
+  color: #FFE01B;
+  background-color: #241C15;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.bg-primary{
+  background-color: #FFE01B;
+  color: #241C15; 
+}

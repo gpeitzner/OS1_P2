@@ -1,0 +1,44 @@
+.Reporte{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(2,50%);
+  grid-template-areas: 
+    " grafica   data "
+    " grafica description "
+    " details details";
+
+  padding: 1rem;
+  max-height: 50%;
+  border: 1px solid black
+}
+
+.grafica{
+  grid-area: grafica;
+  display: flex;
+  padding: 5rem;
+  flex-direction: column;
+  
+}
+
+.details{
+  grid-area: details;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description{
+  grid-area: description;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.data{
+  grid-area: data;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+}
