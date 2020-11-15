@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-nodejs
+  namespace: frontend
+spec:
+  selector:
+    matchLabels:
+      app: frontend-nodejs
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: frontend-nodejs
+    spec:
+      containers:
+        - name: nodejs-server
+          image: gcr.io/peppy-aileron-292121/nodejs-server:1.0
+          ports:
+            - containerPort: 8081
